@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/constants/string_consts.dart';
+import '../../core/routes/route_names.dart';
 import '../../data/dummy_data.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -107,7 +109,7 @@ class ProfileScreen extends StatelessWidget {
             _ProfileMenuItem(
               icon: CupertinoIcons.question_circle,
               title: 'Help & Support',
-              onTap: () {},
+              onTap: () => context.go(RouteNames.adminEnquiry),
             ),
             const SizedBox(height: 20),
             Padding(

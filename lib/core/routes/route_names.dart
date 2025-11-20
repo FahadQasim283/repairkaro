@@ -30,4 +30,5 @@ class RouteNames {
   // Profile
   static const String editProfile = '/edit-profile';
   static const String savedAddresses = '/saved-addresses';
+  static const String adminEnquiry = '/admin-enquiry';
 }

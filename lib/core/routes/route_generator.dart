@@ -8,6 +8,7 @@ import '../../presentation/auth/signup_screen.dart';
 import '../../presentation/service_details/service_details_screen.dart';
 import '../../presentation/book_service/book_service_screen.dart';
 import '../../presentation/in_app_communication/chat_screen.dart';
+import '../../presentation/admin_enquiry/admin_enquiry_screen.dart';
 import '../../presentation/provider_tracking/service_providers_screen.dart';
 import '/core/routes/route_names.dart';
 
@@ -77,6 +78,13 @@ class RouteGenerator {
         builder: (BuildContext context, GoRouterState state) {
           final bookingId = state.uri.queryParameters['bookingId'] ?? '';
           return ServiceProvidersScreen(bookingId: bookingId);
+        },
+      ),
+      GoRoute(
+        path: RouteNames.adminEnquiry,
+        name: 'adminEnquiry',
+        builder: (BuildContext context, GoRouterState state) {
+          return const AdminEnquiryScreen();
         },
       ),
     ],
