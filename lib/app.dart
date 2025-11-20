@@ -8,6 +8,7 @@ class Densat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Densat',
       theme: AppTheme.lightTheme,
       routerConfig: RouteGenerator.router,

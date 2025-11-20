@@ -30,7 +30,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
     return Scaffold(
       body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: Container(
-        height: 80,
+        height: 75,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -42,7 +42,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
           ],
         ),
         child: Padding(
-          padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20, top: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -66,7 +66,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
         scale: isSelected ? 1.0 : 0.95,
         duration: const Duration(milliseconds: 200),
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
