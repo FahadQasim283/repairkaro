@@ -1,0 +1,454 @@
+# Densat Facility Management App - UI/UX Design Documentation
+
+## Theme & Design System
+
+### Color Palette
+Based on the app icon (appicon.png), the design uses a professional green color scheme:
+
+**Primary Colors:**
+- Primary Green: #398265
+- Secondary Green: #14D387
+- Gradient: Linear gradient from Primary to Secondary
+
+**Accent Colors:**
+- Red (for alerts/hot deals): #EF4E4E
+- Blue (for info): #37ABFF
+
+**Neutral Colors:**
+- Background: #FFFFFF (White)
+- Surface: #F5F6F7 (Light Gray)
+- Borders: #DCDFE3
+- Text Primary: #242D35
+- Text Secondary: #6B7580
+- Text Hint: #9BA1A8
+
+### Typography
+- Font Family: Google Fonts - Inter
+- Heading 1: 28px, Bold (700)
+- Heading 2: 20px, Bold (700)
+- Body: 15-16px, Medium (500)
+- Caption: 13px, Regular (400)
+
+### Design Style
+**iOS-Inspired Elements:**
+1. Rounded corners (16px default, 20px for larger cards)
+2. Subtle shadows (elevation-like effects)
+3. Smooth transitions and animations
+4. SF Symbols-style icons (using Cupertino icons)
+5. Clean, minimal interface with ample white space
+6. Large, readable text
+7. Card-based layouts
+8. Bottom sheet interactions
+
+### Component Specifications
+
+#### Buttons
+- **Primary Button:**
+  - Height: 56px
+  - Border Radius: 16px
+  - Gradient: Primary to Secondary
+  - Shadow: 0px 6px 12px rgba(57, 130, 101, 0.3)
+  - Text: White, 16px, Semi-Bold (600)
+
+- **Outlined Button:**
+  - Same dimensions as primary
+  - Border: 2px solid Primary
+  - Background: Transparent
+  - Text: Primary color
+
+#### Input Fields
+- Height: Variable (min 56px for single line)
+- Border Radius: 16px
+- Background: Neutral 100 (#F5F6F7)
+- Border: 1px solid Neutral 300
+- Text: 15px, Medium (500)
+- Hint: 15px, Regular (400), Neutral 500
+
+#### Search Bar (iOS Style)
+- Height: 44px
+- Border Radius: 12px
+- Background: Neutral 100
+- Icon: SF Search icon (Cupertino)
+- No visible border
+
+#### Cards
+- **Service Card:**
+  - Border Radius: 16px
+  - Shadow: 0px 4px 12px rgba(0, 0, 0, 0.06)
+  - Image Height: 140px
+  - Padding: 12px
+  - Badge: 8px border radius, positioned top-right
+
+- **Booking Card:**
+  - Border Radius: 16px
+  - Horizontal layout
+  - Image: 80x80px, 12px border radius
+  - Status badge: 6px border radius
+
+#### Category Cards
+- Size: Grid 3 columns
+- Aspect Ratio: 0.85
+- Border Radius: 16px
+- Icon Container: 56x56px, 16px border radius
+- Icon: 28px emoji
+
+### Screen Specifications
+
+## 1. Splash Screen
+- Full screen with app logo (appicon.png)
+- App name: "Densat" in large text
+- Tagline: "Facility Management Services"
+- 3-second delay before navigation
+- Auto-navigates to Main Tab/Home
+
+## 2. Home Screen
+**Layout:**
+- Header with welcome message and notification bell
+- iOS-style search bar
+- Promotional carousel (auto-play, 4s interval)
+- Service categories grid (3 columns)
+
+**Carousel:**
+- Height: 180px
+- Viewport Fraction: 0.85
+- Auto-play with dot indicators
+- Shows hot deal services with image overlay
+- Price display with strikethrough for discounts
+- Gradient overlay for readability
+- "HOT DEAL" badge with fire icon
+
+**Categories Grid:**
+- 3 columns
+- Emoji icons for each category
+- 10 service categories:
+  1. 🏠 Housekeeping
+  2. 🧼 Sanitization
+  3. ☕ Pantry Services
+  4. 🧹 Floor & Carpet
+  5. 🏨 Guest House
+  6. ❄️ HVAC
+  7. ⚡ Electrical
+  8. 🔧 Plumbing
+  9. 🪚 Carpentry
+  10. 🏢 IFM (Integrated Facility Management)
+
+## 3. Services Listing Screen
+- Search and filter options
+- Category-based grouping
+- Grid or list view of services
+- Service cards with:
+  - Service image
+  - Name and short description
+  - Rating (stars) and review count
+  - Price (with discount if applicable)
+  - Duration badge
+  - Hot/Sale badges
+
+## 4. Service Details Screen
+- Hero image/carousel
+- Service name and description
+- Pricing information
+- Duration
+- Rating and reviews
+- "What's Included" section
+- Long description
+- "Book Now" CTA button (gradient, fixed at bottom)
+
+## 5. Book Service Flow
+
+**Step 1: Select Date & Time**
+- Calendar date picker
+- Time slot selection (buttons)
+- iOS-style pickers
+
+**Step 2: Address Entry**
+- Address text field
+- Saved addresses dropdown
+- Option to add new address
+
+**Step 3: Additional Notes**
+- Multi-line text field for special instructions
+
+**Step 4: Booking Summary**
+- Service details recap
+- Date, time, address
+- Price breakdown
+- "Confirm Booking" button
+
+**Step 5: Confirmation**
+- Success message
+- Booking ID
+- Status: "Pending Approval"
+- Option to view booking details
+
+## 6. Booking History Screen
+**Tab Navigation:**
+- Pending (Orange indicator)
+- Approved (Blue indicator)
+- Completed (Green indicator)
+
+**Booking Card Components:**
+- Service thumbnail (80x80px)
+- Service name
+- Date and time slot
+- Address (truncated)
+- Status badge
+- Price
+- Tap to view details
+
+**Pending Bookings:**
+- Shows requests waiting for admin approval
+- Orange status badge
+- "Waiting for approval" message
+
+**Approved Bookings:**
+- Blue status badge
+- "Select Service Provider" button
+- Shows when service provider is assigned
+
+**Completed Bookings:**
+- Green status badge
+- Option to rebook
+- Rate service provider option
+
+## 7. Service Provider List Screen
+(For approved bookings)
+- List of available service providers
+- Provider cards with:
+  - Profile photo (circular, 60px)
+  - Name
+  - Rating (stars)
+  - Completed jobs count
+  - Specializations (chips)
+  - Availability status
+  - Distance/location (if available)
+  - "Chat" and "Call" buttons
+
+**Provider Card Layout:**
+- Horizontal card
+- White background with shadow
+- Available: Green dot indicator
+- Unavailable: Gray out + "Not Available" badge
+
+## 8. Chat Screen
+**Custom Chat UI:**
+- iOS-style message bubbles
+- User messages: Right-aligned, green gradient
+- Provider messages: Left-aligned, light gray
+- Timestamp below each message
+- Avatar for provider messages
+- Input field at bottom:
+  - Text input with rounded corners
+  - Send button (green gradient circle)
+  - Attachment option (icon)
+
+**Message Types:**
+- Text messages
+- System messages (center-aligned, gray)
+- Image messages (future)
+
+**Header:**
+- Provider name and avatar
+- Online/offline status
+- Call icon button
+
+## 9. User Profile Screen
+**Sections:**
+
+**Header:**
+- Large profile photo (circular, 100px)
+- User name
+- Email
+- Edit profile button
+
+**Menu Items:**
+- Personal Information (icon + label)
+- Saved Addresses (icon + label + count badge)
+- Settings (icon + label)
+- Help & Support (icon + label)
+- Logout (red color)
+
+**Personal Information:**
+- Name field
+- Email field (read-only)
+- Phone number field
+- Save button
+
+**Saved Addresses:**
+- List of addresses
+- Add new address button
+- Delete option (swipe left)
+
+## 10. Main Tab Navigation (Bottom Navigation Bar)
+**iOS-Style Bottom Bar:**
+- Height: 80px (with safe area)
+- Background: White with top border
+- 4 tabs:
+  1. 🏠 Home
+  2. 📋 Services
+  3. 📅 Bookings
+  4. 👤 Profile
+
+**Tab Styling:**
+- Active: Primary green color
+- Inactive: Neutral 500 (gray)
+- Icons: Cupertino style
+- Label: 12px, below icon
+- Selected state: Color + slight scale animation
+
+## User Flow
+
+### Booking Flow:
+1. User opens app → Splash → Home Screen
+2. Browse hot deals carousel or categories
+3. Tap on service → Service Details
+4. Tap "Book Now" → Date & Time Selection
+5. Enter/Select Address → Add Notes
+6. Review Summary → Confirm Booking
+7. Booking created with "Pending" status
+8. Navigate to Bookings tab to see pending request
+
+### Admin Approval Flow (Simulated):
+1. Admin approves booking (background - not in app yet)
+2. Booking status changes to "Approved"
+3. User sees "Approved" in bookings tab
+4. User taps booking → "Select Service Provider" button appears
+
+### Service Provider Selection:
+1. User taps "Select Service Provider"
+2. Sees list of available providers
+3. Selects a provider
+4. Can chat with provider
+5. Can call provider
+6. Service progresses to "In Progress"
+
+### Completion:
+1. Service completed
+2. Status changes to "Completed"
+3. User can rate and review
+4. Service history maintained
+
+## Animation & Interaction
+
+**Micro-interactions:**
+- Button press: Scale down slightly (0.95)
+- Card tap: Brief highlight
+- Carousel: Smooth slide with easing
+- Tab switch: Fade transition
+- Bottom sheet: Slide up from bottom
+- Page transition: iOS-style push/pop
+
+**Loading States:**
+- Circular progress indicator (primary color)
+- Skeleton screens for lists
+- Shimmer effect for images
+
+**Empty States:**
+- Icon + message
+- "No bookings yet" with illustration
+- "No search results" with suggestions
+
+## Accessibility
+- Minimum touch target: 44x44px
+- Color contrast ratio: WCAG AA compliant
+- Font scaling support
+- VoiceOver/TalkBack labels
+- Semantic labels for icons
+
+## Responsive Design
+- Single column layout for mobile
+- Adaptive spacing based on screen size
+- Safe area handling for notched devices
+- Keyboard avoidance for input fields
+
+## Data Models
+
+### Service
+- ID, name, description, longDescription
+- Price, originalPrice (for discounts)
+- Duration
+- Category type
+- Rating, reviewsCount
+- ImageURL
+- Flags: isHot, isOnSale
+
+### Booking
+- ID, serviceId, serviceName
+- BookingDate, timeSlot
+- Address, notes
+- Price
+- Status: pending/approved/inProgress/completed/cancelled
+- ServiceProviderId, serviceProviderName
+- CreatedAt
+
+### ServiceProvider
+- ID, name, email, phoneNumber
+- ProfileImage
+- Rating, completedJobs
+- Specializations (array)
+- isAvailable
+- currentLocation
+
+### ChatMessage
+- ID, senderId, senderName
+- Message, type (text/image/system)
+- Timestamp
+- isMe (boolean)
+
+### UserProfile
+- ID, name, email, phoneNumber
+- ProfileImage
+- SavedAddresses (array)
+
+## Technical Implementation Notes
+
+**State Management:**
+- Simple setState for local state
+- Dummy data from DummyData class
+- No backend integration (UI only)
+
+**Navigation:**
+- GoRouter for declarative routing
+- Bottom navigation with nested navigation
+- Modal bottom sheets for selections
+
+**Packages Used:**
+- google_fonts: Inter font family
+- carousel_slider: Promotional carousel
+- intl: Date formatting
+- go_router: Navigation
+
+**Assets:**
+- App icon: assets/images/appicon.png
+- Service images: Network images (Unsplash)
+- Provider avatars: Pravatar placeholder
+
+## Design Principles
+
+1. **Consistency**: Uniform spacing, colors, and components throughout
+2. **Clarity**: Clear hierarchy and readable text
+3. **Feedback**: Visual feedback for all interactions
+4. **Efficiency**: Minimal steps to complete tasks
+5. **iOS Feel**: Native iOS design patterns and interactions
+6. **Professional**: Clean, modern, business-appropriate design
+7. **Trust**: Clear pricing, status updates, provider information
+
+## Future Enhancements
+
+1. Real-time tracking of service provider
+2. Push notifications for status updates
+3. Payment integration
+4. Review and rating system
+5. Promo codes and discounts
+6. Multi-language support
+7. Dark mode
+8. Admin panel integration
+9. Video chat support
+10. Service history analytics
+
+---
+
+**Design Version:** 1.0  
+**Last Updated:** November 20, 2025  
+**Platform:** Flutter (iOS & Android)  
+**Design System:** Custom based on iOS Human Interface Guidelines
