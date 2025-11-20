@@ -137,7 +137,7 @@ class ServiceCard extends StatelessWidget {
                         children: [
                           if (service.isOnSale && service.originalPrice != null)
                             Text(
-                              'PKR ${service.originalPrice!.toStringAsFixed(0)}',
+                              'INR ${service.originalPrice!.toStringAsFixed(0)}',
                               style: GoogleFonts.inter(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -146,7 +146,7 @@ class ServiceCard extends StatelessWidget {
                               ),
                             ),
                           Text(
-                            'PKR ${service.price.toStringAsFixed(0)}',
+                            'INR ${service.price.toStringAsFixed(0)}',
                             style: GoogleFonts.inter(
                               fontSize: 16,
                               fontWeight: FontWeight.w700,
@@ -302,7 +302,7 @@ class BookingCard extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'PKR ${booking.price.toStringAsFixed(0)}',
+                          'INR ${booking.price.toStringAsFixed(0)}',
                           style: GoogleFonts.inter(
                             fontSize: 15,
                             fontWeight: FontWeight.w700,

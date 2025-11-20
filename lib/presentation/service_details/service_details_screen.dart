@@ -171,7 +171,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  'PKR ${service.price}',
+                                  'INR ${service.price}',
                                   style: GoogleFonts.inter(
                                     fontSize: 24,
                                     fontWeight: FontWeight.w700,
@@ -181,7 +181,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                                 if (service.isOnSale && service.originalPrice != null) ...[
                                   const SizedBox(width: 8),
                                   Text(
-                                    'PKR ${service.originalPrice}',
+                                    'INR ${service.originalPrice}',
                                     style: GoogleFonts.inter(
                                       fontSize: 16,
                                       color: AppColors.neutral400,

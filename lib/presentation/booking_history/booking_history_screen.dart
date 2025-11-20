@@ -215,7 +215,7 @@ class _BookingCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'PKR ${booking.price.toStringAsFixed(0)}',
+                  'INR ${booking.price.toStringAsFixed(0)}',
                   style: GoogleFonts.inter(
                     fontSize: 16,
                     fontWeight: FontWeight.w700,

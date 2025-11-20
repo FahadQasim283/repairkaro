@@ -102,7 +102,7 @@ class _BookServiceScreenState extends State<BookServiceScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          'PKR ${service.price}',
+                          'INR ${service.price}',
                           style: GoogleFonts.inter(
                             fontSize: 18,
                             fontWeight: FontWeight.w700,

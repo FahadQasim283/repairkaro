@@ -204,7 +204,7 @@ class _ServiceListCard extends StatelessWidget {
                         ),
                         const Spacer(),
                         Text(
-                          'PKR ${service.price.toStringAsFixed(0)}',
+                          'INR ${service.price.toStringAsFixed(0)}',
                           style: GoogleFonts.inter(
                             fontSize: 16,
                             fontWeight: FontWeight.w700,

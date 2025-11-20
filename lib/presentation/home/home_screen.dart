@@ -255,7 +255,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 if (service.isOnSale &&
                                                     service.originalPrice != null)
                                                   Text(
-                                                    'PKR ${service.originalPrice!.toStringAsFixed(0)}',
+                                                    'INR ${service.originalPrice!.toStringAsFixed(0)}',
                                                     style: GoogleFonts.inter(
                                                       fontSize: 13,
                                                       fontWeight: FontWeight.w500,
@@ -264,7 +264,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     ),
                                                   ),
                                                 Text(
-                                                  'PKR ${service.price.toStringAsFixed(0)}',
+                                                  'INR ${service.price.toStringAsFixed(0)}',
                                                   style: GoogleFonts.inter(
                                                     fontSize: 20,
                                                     fontWeight: FontWeight.w700,
