@@ -49,7 +49,7 @@ class _ChatScreenState extends State<ChatScreen> {
         ),
         title: Row(
           children: [
-            CircleAvatar(radius: 20, backgroundImage: NetworkImage(provider.profileImage)),
+            CircleAvatar(radius: 20, backgroundImage: AssetImage(provider.profileImage)),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
@@ -163,7 +163,7 @@ class _ChatScreenState extends State<ChatScreen> {
             CircleAvatar(
               radius: 16,
               backgroundImage: DummyData.userProfile.profileImage != null
-                  ? NetworkImage(DummyData.userProfile.profileImage!)
+                  ? AssetImage(DummyData.userProfile.profileImage!)
                   : null,
               child: DummyData.userProfile.profileImage == null
                   ? Text(

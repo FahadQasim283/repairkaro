@@ -78,7 +78,7 @@ class ServiceProvidersScreen extends StatelessWidget {
                             children: [
                               CircleAvatar(
                                 radius: 32,
-                                backgroundImage: NetworkImage(provider.profileImage),
+                                backgroundImage: AssetImage(provider.profileImage),
                               ),
                               if (provider.isAvailable)
                                 Positioned(
