@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:go_router/go_router.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/constants/string_consts.dart';
 import '../../data/dummy_data.dart';
 import '../../data/models/service.dart';
 import '../../data/models/service_category.dart';
+import '../../core/routes/route_names.dart';
 import '../widgets/custom_textfield.dart';
 
 class ServicesListingScreen extends StatefulWidget {
@@ -78,7 +80,7 @@ class _ServicesListingScreenState extends State<ServicesListingScreen> {
                   child: _ServiceListCard(
                     service: service,
                     onTap: () {
-                      // Navigate to service details
+                      context.push('${RouteNames.serviceDetails}?serviceId=${service.id}');
                     },
                   ),
                 );

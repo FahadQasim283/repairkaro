@@ -3,11 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../presentation/splash/splash_screen.dart';
 import '../../presentation/main_tab/main_tab_screen.dart';
+import '../../presentation/auth/login_screen.dart';
+import '../../presentation/auth/signup_screen.dart';
+import '../../presentation/service_details/service_details_screen.dart';
+import '../../presentation/book_service/book_service_screen.dart';
+import '../../presentation/in_app_communication/chat_screen.dart';
+import '../../presentation/provider_tracking/service_providers_screen.dart';
 import '/core/routes/route_names.dart';
-import '/core/routes/route_config.dart';
 
 final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
-final GlobalKey<NavigatorState> shellNavigatorKey = GlobalKey<NavigatorState>();
 
 class RouteGenerator {
   static final GoRouter router = GoRouter(
@@ -27,6 +31,52 @@ class RouteGenerator {
         name: 'mainTab',
         builder: (BuildContext context, GoRouterState state) {
           return const MainTabScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.login,
+        name: 'login',
+        builder: (BuildContext context, GoRouterState state) {
+          return const LoginScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.signup,
+        name: 'signup',
+        builder: (BuildContext context, GoRouterState state) {
+          return const SignupScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.serviceDetails,
+        name: 'serviceDetails',
+        builder: (BuildContext context, GoRouterState state) {
+          final serviceId = state.uri.queryParameters['serviceId'] ?? '';
+          return ServiceDetailsScreen(serviceId: serviceId);
+        },
+      ),
+      GoRoute(
+        path: RouteNames.bookService,
+        name: 'bookService',
+        builder: (BuildContext context, GoRouterState state) {
+          final serviceId = state.uri.queryParameters['serviceId'] ?? '';
+          return BookServiceScreen(serviceId: serviceId);
+        },
+      ),
+      GoRoute(
+        path: RouteNames.chat,
+        name: 'chat',
+        builder: (BuildContext context, GoRouterState state) {
+          final providerId = state.uri.queryParameters['providerId'] ?? '';
+          return ChatScreen(providerId: providerId);
+        },
+      ),
+      GoRoute(
+        path: RouteNames.serviceProviders,
+        name: 'serviceProviders',
+        builder: (BuildContext context, GoRouterState state) {
+          final bookingId = state.uri.queryParameters['bookingId'] ?? '';
+          return ServiceProvidersScreen(bookingId: bookingId);
         },
       ),
     ],
