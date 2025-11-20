@@ -30,6 +30,7 @@ class _MainTabScreenState extends State<MainTabScreen> {
     return Scaffold(
       body: IndexedStack(index: _currentIndex, children: _screens),
       bottomNavigationBar: Container(
+        height: 80,
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
@@ -40,19 +41,16 @@ class _MainTabScreenState extends State<MainTabScreen> {
             ),
           ],
         ),
-        child: SafeArea(
-          child: Container(
-            height: 60,
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _buildNavItem(0, CupertinoIcons.home, AppStrings.home),
-                _buildNavItem(1, CupertinoIcons.square_grid_2x2, AppStrings.services),
-                _buildNavItem(2, CupertinoIcons.calendar, AppStrings.myBookings),
-                _buildNavItem(3, CupertinoIcons.person, AppStrings.profile),
-              ],
-            ),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20, top: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              _buildNavItem(0, CupertinoIcons.home, AppStrings.home),
+              _buildNavItem(1, CupertinoIcons.square_grid_2x2, AppStrings.services),
+              _buildNavItem(2, CupertinoIcons.calendar, AppStrings.myBookings),
+              _buildNavItem(3, CupertinoIcons.person, AppStrings.profile),
+            ],
           ),
         ),
       ),

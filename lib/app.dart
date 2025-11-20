@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
+import 'core/routes/route_generator.dart';
+import 'core/theme/theme.dart';
 
-class Densat extends StatefulWidget {
+class Densat extends StatelessWidget {
   const Densat({super.key});
 
   @override
-  State<Densat> createState() => _DensatState();
-}
-
-class _DensatState extends State<Densat> {
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Densat',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Densat Home Page')),
-        body: const Center(child: Text('Welcome to Densat!')),
-      ),
+      theme: AppTheme.lightTheme,
+      routerConfig: RouteGenerator.router,
     );
   }
 }
-
