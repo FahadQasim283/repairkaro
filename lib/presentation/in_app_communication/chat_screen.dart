@@ -162,7 +162,19 @@ class _ChatScreenState extends State<ChatScreen> {
             const SizedBox(width: 8),
             CircleAvatar(
               radius: 16,
-              backgroundImage: NetworkImage(DummyData.userProfile.profileImage),
+              backgroundImage: DummyData.userProfile.profileImage != null
+                  ? NetworkImage(DummyData.userProfile.profileImage!)
+                  : null,
+              child: DummyData.userProfile.profileImage == null
+                  ? Text(
+                      DummyData.userProfile.name[0],
+                      style: GoogleFonts.inter(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                      ),
+                    )
+                  : null,
             ),
           ],
         ],
@@ -177,7 +189,7 @@ class _ChatScreenState extends State<ChatScreen> {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 10,
             offset: const Offset(0, -2),
           ),

@@ -57,7 +57,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
-                        colors: [Colors.transparent, Colors.black.withOpacity(0.7)],
+                        colors: [Colors.transparent, Colors.black.withValues(alpha: 0.7)],
                       ),
                     ),
                   ),
@@ -263,7 +263,7 @@ class ServiceDetailsScreen extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.06),
+              color: Colors.black.withValues(alpha: 0.06),
               blurRadius: 10,
               offset: const Offset(0, -2),
             ),

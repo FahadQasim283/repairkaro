@@ -152,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   borderRadius: BorderRadius.circular(20),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Colors.black.withOpacity(0.1),
+                                      color: Colors.black.withValues(alpha: 0.1),
                                       blurRadius: 15,
                                       offset: const Offset(0, 5),
                                     ),
@@ -167,8 +167,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
-                                              AppColors.primary.withOpacity(0.8),
-                                              AppColors.secondary.withOpacity(0.8),
+                                              AppColors.primary.withValues(alpha: 0.8),
+                                              AppColors.secondary.withValues(alpha: 0.8),
                                             ],
                                             begin: Alignment.topLeft,
                                             end: Alignment.bottomRight,
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             ? Image.network(
                                                 service.imageUrl,
                                                 fit: BoxFit.cover,
-                                                color: Colors.black.withOpacity(0.3),
+                                                color: Colors.black.withValues(alpha: 0.3),
                                                 colorBlendMode: BlendMode.darken,
                                               )
                                             : null,
@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           gradient: LinearGradient(
                                             colors: [
                                               Colors.transparent,
-                                              Colors.black.withOpacity(0.8),
+                                              Colors.black.withValues(alpha: 0.8),
                                             ],
                                             begin: Alignment.topCenter,
                                             end: Alignment.bottomCenter,
@@ -353,7 +353,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             width: 56,
                             height: 56,
                             decoration: BoxDecoration(
-                              color: AppColors.primary.withOpacity(0.1),
+                              color: AppColors.primary.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(16),
                             ),
                             child: Center(
