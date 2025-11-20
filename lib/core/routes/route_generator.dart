@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../presentation/splash/splash_screen.dart';
-import '../../presentation/home/home_screen.dart';
+import '../../presentation/main_tab/main_tab_screen.dart';
 import '/core/routes/route_names.dart';
 import '/core/routes/route_config.dart';
 
@@ -14,43 +14,21 @@ class RouteGenerator {
     initialLocation: RouteNames.splash,
     debugLogDiagnostics: kDebugMode,
     navigatorKey: rootNavigatorKey,
-    redirect: (BuildContext context, GoRouterState state) {
-      final String location = state.matchedLocation;
-
-      final bool isAuthenticated = true;
-
-      if (isAuthenticated && (location == RouteNames.splash || location == RouteNames.onboarding)) {
-        debugPrint('Redirecting from splash/onboarding to main tab');
-        // return RouteNames.homePath;
-      }
-
-      if (!isAuthenticated && RouteConfig.requiresAuth(location)) {
-        debugPrint('Redirecting to login from unauthenticated route: $location');
-        return RouteNames.login;
-      }
-
-      return null;
-    },
     routes: [
       GoRoute(
         path: RouteNames.splash,
-        name: RouteNames.splash,
+        name: 'splash',
         builder: (BuildContext context, GoRouterState state) {
           return const SplashScreen();
         },
       ),
       GoRoute(
-        path: '${RouteNames.mainTab}/${RouteNames.home}',
-        name: 'home',
+        path: RouteNames.mainTab,
+        name: 'mainTab',
         builder: (BuildContext context, GoRouterState state) {
-          return const HomeScreen();
+          return const MainTabScreen();
         },
       ),
-      // ShellRoute(
-      //   navigatorKey: shellNavigatorKey,
-      //   builder: (context, state, child) => MainTabScreen(child: child),
-      //   routes: [],
-      // ),
     ],
     errorBuilder: (context, state) =>
         ErrorScreen(errorMessage: state.error?.toString(), currentLocation: state.matchedLocation),

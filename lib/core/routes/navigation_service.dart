@@ -42,6 +42,37 @@ class NavigationService {
     }
   }
 
+  // Main app navigation
+  static void goToMainTab() {
+    if (currentContext != null) {
+      GoRouter.of(currentContext!).go(RouteNames.mainTab);
+    }
+  }
+
+  static void goToHome() {
+    if (currentContext != null) {
+      GoRouter.of(currentContext!).go(RouteNames.home);
+    }
+  }
+
+  static void goToServices() {
+    if (currentContext != null) {
+      GoRouter.of(currentContext!).go(RouteNames.services);
+    }
+  }
+
+  static void goToBookings() {
+    if (currentContext != null) {
+      GoRouter.of(currentContext!).go(RouteNames.bookings);
+    }
+  }
+
+  static void goToProfile() {
+    if (currentContext != null) {
+      GoRouter.of(currentContext!).go(RouteNames.profile);
+    }
+  }
+
   static void push(String routePath) {
     if (currentContext != null && RouteConfig.isValidRoutePath(routePath)) {
       GoRouter.of(currentContext!).push(routePath);
