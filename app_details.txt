@@ -1,0 +1,200 @@
+Splash Screen
+
+App logo
+
+Brand colors
+
+Clean minimal intro screen
+
+2️⃣ User Authentication
+
+Signup Screen
+
+Name, Email, Phone, Password fields
+
+Simple layout + primary CTA
+
+Signin Screen
+
+Email/Phone + Password
+
+Forgot password
+
+Easy, fast access UI
+
+3️⃣ Home Screen
+
+Promotional banner on top
+
+Categories of services (grid or card layout)
+
+Quick access buttons
+
+Clean, modern layout
+
+4️⃣ Services Listing
+
+All available services displayed in list or grid view
+
+Icons + service title + short description
+
+Easy navigation
+
+5️⃣ Service Details
+
+Service description
+
+Price & duration
+
+Images or icons
+
+“Book Service” primary action button
+
+6️⃣ Book Service Flow
+
+Date & Time selection
+
+Address input
+
+Additional notes
+
+Booking summary + confirm button
+
+7️⃣ Booking History
+
+Past and active bookings
+
+Status indicators (Pending, In-progress, Completed)
+
+8️⃣ User Profile
+
+User info
+
+Edit profile
+
+Saved addresses
+
+Logout button
+
+9️⃣ Promotion Banner
+
+Main banner on home
+
+Offers / discounts
+
+Auto-slide or static
+
+🔟 Admin Enquiry Form
+
+Simple form to send message/query to admin
+
+Stored in admin panel
+
+1️⃣1️⃣ Provider Tracking
+
+Live provider status
+
+Distance + ETA
+
+Provider details
+
+Smooth tracking UI
+
+1️⃣2️⃣ In-App Communication
+
+Call feature
+
+Chat interface
+
+Clean & easy messaging layout
+
+🎨 Overall UI/UX Style (Client Expectations)
+
+Professional
+
+Clean layout
+
+Modern icons
+
+Easy navigation
+
+Consistent color theme
+
+User-centered flow
+
+
+
+
+What Does Densat Offer (Facility Management Services)
+
+On their Facilities Management page, Densat lists a range of services, both “soft” (administrative, cleaning, staffing) and “hard” (technical, structural, mechanical). 
+densat.com
++3
+densat.com
++3
+densat.com
++3
+
+Here are the key service categories:
+
+Housekeeping Services
+
+Regular cleaning
+
+Office cleaning, common areas, etc. 
+densat.com
+
+Sanitization Services
+
+Deep sanitization / disinfection services 
+densat.com
+
+Pantry Services
+
+Staff to manage pantry / catering operations. 
+densat.com
+
+Floor, Carpet & Upholstery Solutions
+
+Cleaning and maintenance for carpets, upholstery
+
+They emphasize use of organic chemicals for carpet cleaning. 
+densat.com
++1
+
+Guest House Management
+
+Managing guest house operations: check-in/maintenance/guest register. 
+densat.com
+
+Hard Services (Building Maintenance)
+According to their “Hard Services” page: 
+densat.com
+
+HVAC (heating, ventilation, air conditioning)
+
+Electrical services (maintenance, operations)
+
+Mechanical services
+
+Plumbing
+
+Carpentry
+
+General building maintenance & management
+
+Preventative and predictive maintenance to reduce unplanned downtime / breakdowns.
+
+Integrated Facility Management (IFM)
+
+They promote a one-vendor model: both soft and hard services under one roof. 
+densat.com
++1
+
+This helps in reducing communication overhead, having a single point of contact, and potentially lowering overall costs. 
+densat.com
+
+Their IFM model includes trained, police-verified, uniformed staff with backup relievers if someone is absent. 
+densat.com
+
+They use advanced machines (ride-on scrubbers, industrial vacuums) and environmentally safe materials.
