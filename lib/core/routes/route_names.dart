@@ -31,4 +31,17 @@ class RouteNames {
   static const String editProfile = '/edit-profile';
   static const String savedAddresses = '/saved-addresses';
   static const String adminEnquiry = '/admin-enquiry';
+
+  // Role Selector
+  static const String roleSelector = '/role-selector';
+
+  // Serviceman
+  static const String servicemanLogin = '/serviceman-login';
+  static const String servicemanSignup = '/serviceman-signup';
+  static const String servicemanMainTab = '/serviceman-main';
+  static const String servicemanDashboard = '/serviceman-dashboard';
+  static const String servicemanJobs = '/serviceman-jobs';
+  static const String servicemanJobDetails = '/serviceman-job-details';
+  static const String servicemanChatList = '/serviceman-chat-list';
+  static const String servicemanProfile = '/serviceman-profile';
 }

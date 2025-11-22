@@ -10,6 +10,9 @@ import '../../presentation/book_service/book_service_screen.dart';
 import '../../presentation/in_app_communication/chat_screen.dart';
 import '../../presentation/admin_enquiry/admin_enquiry_screen.dart';
 import '../../presentation/provider_tracking/service_providers_screen.dart';
+import '../../presentation/role_selector/role_selector_screen.dart';
+import '../../presentation/serviceman/auth/serviceman_login_screen.dart';
+import '../../presentation/serviceman/main_tab/serviceman_main_tab_screen.dart';
 import '/core/routes/route_names.dart';
 
 final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -85,6 +88,27 @@ class RouteGenerator {
         name: 'adminEnquiry',
         builder: (BuildContext context, GoRouterState state) {
           return const AdminEnquiryScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.roleSelector,
+        name: 'roleSelector',
+        builder: (BuildContext context, GoRouterState state) {
+          return const RoleSelectorScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.servicemanLogin,
+        name: 'servicemanLogin',
+        builder: (BuildContext context, GoRouterState state) {
+          return const ServicemanLoginScreen();
+        },
+      ),
+      GoRoute(
+        path: RouteNames.servicemanMainTab,
+        name: 'servicemanMainTab',
+        builder: (BuildContext context, GoRouterState state) {
+          return const ServicemanMainTabScreen();
         },
       ),
     ],

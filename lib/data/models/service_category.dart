@@ -1,15 +1,12 @@
 enum ServiceCategoryType {
-  housekeeping,
-  sanitization,
-  pantry,
-  floorCarpet,
-  guestHouse,
-  hvac,
-  electrical,
-  mechanical,
-  plumbing,
-  carpentry,
-  ifm,
+  laptopComputer,
+  homeAppliances,
+  kitchenAppliances,
+  carRepair,
+  cctvSecurity,
+  waterPurifier,
+  liftMaintenance,
+  amcServices,
 }
 
 class ServiceCategory {

@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
-        context.go(RouteNames.login);
+        context.go(RouteNames.roleSelector);
       }
     });
   }
@@ -55,7 +55,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             const SizedBox(height: 30),
             Text(
-              'Densat',
+              'RepairKro',
               style: GoogleFonts.inter(
                 fontSize: 36,
                 fontWeight: FontWeight.w700,

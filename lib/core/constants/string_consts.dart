@@ -2,7 +2,7 @@ class AppStrings {
   AppStrings._();
 
   // App
-  static const String appName = 'Densat';
+  static const String appName = 'RepairKro';
   static const String tagline = 'Facility Management Services';
 
   // Splash
