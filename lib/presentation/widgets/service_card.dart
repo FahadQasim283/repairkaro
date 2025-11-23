@@ -132,29 +132,7 @@ class ServiceCard extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          if (service.isOnSale && service.originalPrice != null)
-                            Text(
-                              'INR ${service.originalPrice!.toStringAsFixed(0)}',
-                              style: GoogleFonts.inter(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: AppColors.neutral400,
-                                decoration: TextDecoration.lineThrough,
-                              ),
-                            ),
-                          Text(
-                            'INR ${service.price.toStringAsFixed(0)}',
-                            style: GoogleFonts.inter(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.primary,
-                            ),
-                          ),
-                        ],
-                      ),
+                      // Price removed
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         decoration: BoxDecoration(
@@ -301,14 +279,7 @@ class BookingCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
-                          'INR ${booking.price.toStringAsFixed(0)}',
-                          style: GoogleFonts.inter(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.primary,
-                          ),
-                        ),
+                        // Price removed
                       ],
                     ),
                   ],

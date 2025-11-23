@@ -4,16 +4,16 @@ class AppColors {
   AppColors._();
 
   // Primary Brand Colors
-  static const Color primary = Color(0xFF9C27B0); // Purple
-  static const Color secondary = Color(0xFF000080); // Navy Blue
+  static const Color primary = Color(0xFF673AB7); // Deep Purple
+  static const Color secondary = Color(0xFF1E90FF); // Darker Sky Blue
 
   // Gradients & Shadows
   static const Color gradientStart = primary;
   static const Color gradientEnd = secondary;
-  static const Color greenStart = Color(0xFF7B1FA2);
-  static const Color greenEnd = Color(0xFFBA68C8);
-  static const Color shadowGreen = Color(0xFF6A1B9A);
-  static const Color shadowLightGreen = Color(0xFFAB47BC);
+  static const Color greenStart = Color(0xFF512DA8);
+  static const Color greenEnd = Color(0xFF9575CD);
+  static const Color shadowGreen = Color(0xFF4527A0);
+  static const Color shadowLightGreen = Color(0xFF7E57C2);
 
   // Red
   static const Color red = Color(0xFFEF4E4E);

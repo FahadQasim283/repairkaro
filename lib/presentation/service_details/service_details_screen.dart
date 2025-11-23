@@ -168,29 +168,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                               style: GoogleFonts.inter(fontSize: 14, color: AppColors.neutral600),
                             ),
                             const SizedBox(height: 4),
-                            Row(
-                              children: [
-                                Text(
-                                  'INR ${service.price}',
-                                  style: GoogleFonts.inter(
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.w700,
-                                    color: AppColors.primary,
-                                  ),
-                                ),
-                                if (service.isOnSale && service.originalPrice != null) ...[
-                                  const SizedBox(width: 8),
-                                  Text(
-                                    'INR ${service.originalPrice}',
-                                    style: GoogleFonts.inter(
-                                      fontSize: 16,
-                                      color: AppColors.neutral400,
-                                      decoration: TextDecoration.lineThrough,
-                                    ),
-                                  ),
-                                ],
-                              ],
-                            ),
+                            // Price removed
                           ],
                         ),
                         Column(

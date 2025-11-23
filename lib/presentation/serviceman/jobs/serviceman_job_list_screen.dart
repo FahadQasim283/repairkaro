@@ -135,16 +135,7 @@ class _JobCard extends StatelessWidget {
                 const SizedBox(height: 12),
                 Row(
                   children: [
-                    Expanded(
-                      child: Text(
-                        'Rs ${booking.price}',
-                        style: GoogleFonts.inter(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.secondary,
-                        ),
-                      ),
-                    ),
+                    // Price removed
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
