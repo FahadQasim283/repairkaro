@@ -119,7 +119,7 @@ class ServicemanDashboardScreen extends StatelessWidget {
                       title: 'Pending',
                       value: pendingJobs.toString(),
                       icon: CupertinoIcons.clock,
-                      color: Colors.orange,
+                      color: AppColors.orange,
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -137,7 +137,7 @@ class ServicemanDashboardScreen extends StatelessWidget {
                       title: 'Completed',
                       value: completedJobs.toString(),
                       icon: CupertinoIcons.check_mark_circled_solid,
-                      color: Colors.green,
+                      color: AppColors.primary,
                     ),
                   ),
                 ],
@@ -222,10 +222,10 @@ class _JobCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color statusColor = booking.status == BookingStatus.pending
-        ? Colors.orange
+        ? AppColors.orange
         : booking.status == BookingStatus.approved
         ? AppColors.primary
-        : Colors.green;
+        : AppColors.primary;
 
     return Container(
       margin: const EdgeInsets.only(bottom: 12),

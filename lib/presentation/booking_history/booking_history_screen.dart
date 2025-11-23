@@ -112,7 +112,7 @@ class _BookingCard extends StatelessWidget {
   Color _getStatusColor() {
     switch (booking.status) {
       case BookingStatus.pending:
-        return Colors.orange;
+        return AppColors.orange;
       case BookingStatus.approved:
         return AppColors.blue;
       case BookingStatus.inProgress:
@@ -243,7 +243,7 @@ class _BookingCard extends StatelessWidget {
                     style: GoogleFonts.inter(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: Colors.white,
+                      color: AppColors.white,
                     ),
                   ),
                 ),

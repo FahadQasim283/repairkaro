@@ -120,7 +120,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                         const SizedBox(height: 8),
                         Row(
                           children: [
-                            const Icon(Icons.star, color: Colors.amber, size: 18),
+                            const Icon(Icons.star, color: AppColors.amber, size: 18),
                             const SizedBox(width: 4),
                             Text(
                               '${service.rating}',

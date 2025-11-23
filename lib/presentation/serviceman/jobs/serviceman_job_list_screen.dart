@@ -44,10 +44,10 @@ class _JobCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color statusColor = booking.status == BookingStatus.pending
-        ? Colors.orange
+        ? AppColors.orange
         : booking.status == BookingStatus.approved
         ? AppColors.primary
-        : Colors.green;
+        : AppColors.primary;
 
     return Container(
       margin: const EdgeInsets.only(bottom: 16),

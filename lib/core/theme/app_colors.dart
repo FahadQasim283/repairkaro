@@ -4,16 +4,16 @@ class AppColors {
   AppColors._();
 
   // Primary Brand Colors
-  static const Color primary = Color(0xFF398265);
-  static const Color secondary = Color(0xFF14D387);
+  static const Color primary = Color(0xFF9C27B0); // Purple
+  static const Color secondary = Color(0xFF000080); // Navy Blue
 
   // Gradients & Shadows
   static const Color gradientStart = primary;
   static const Color gradientEnd = secondary;
-  static const Color greenStart = Color(0xFF348E6A);
-  static const Color greenEnd = Color(0xFF20B87C);
-  static const Color shadowGreen = Color(0xFF30976E);
-  static const Color shadowLightGreen = Color(0xFF58C299);
+  static const Color greenStart = Color(0xFF7B1FA2);
+  static const Color greenEnd = Color(0xFFBA68C8);
+  static const Color shadowGreen = Color(0xFF6A1B9A);
+  static const Color shadowLightGreen = Color(0xFFAB47BC);
 
   // Red
   static const Color red = Color(0xFFEF4E4E);
@@ -22,6 +22,7 @@ class AppColors {
 
   // Neutrals
   static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Color(0xFF000000);
   static const Color greyText = Color(0xFFA3A3A3); // consider removing or mapping to neutral400
   static const Color greyHint = Color(0xFF949495); // consider using as neutralHint
 
@@ -33,11 +34,14 @@ class AppColors {
   static const Color neutral800 = Color(0xFF242D35);
   static const Color neutralBorder = Color(0xFFB0B8BF);
 
+  // Additional Colors
+  static const Color orange = Color(0xFFFF9800);
+  static const Color amber = Color(0xFFFFC107);
+
   // Reusable Gradients
   static const List<Color> buttonGradient = [primary, secondary];
 
   //blue
   static const Color blue = Color(0xFF37ABFF);
   static const Color blueShadow = Color.fromRGBO(24, 144, 255, 0.2);
-
 }
