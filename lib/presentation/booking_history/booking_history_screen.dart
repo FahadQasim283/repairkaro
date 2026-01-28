@@ -112,7 +112,7 @@ class _BookingCard extends StatelessWidget {
   Color _getStatusColor() {
     switch (booking.status) {
       case BookingStatus.pending:
-        return Colors.orange;
+        return AppColors.orange;
       case BookingStatus.approved:
         return AppColors.blue;
       case BookingStatus.inProgress:
@@ -214,14 +214,7 @@ class _BookingCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text(
-                  'INR ${booking.price.toStringAsFixed(0)}',
-                  style: GoogleFonts.inter(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.primary,
-                  ),
-                ),
+                // Price removed
               ],
             ),
             if (booking.status == BookingStatus.approved) ...[
@@ -243,7 +236,7 @@ class _BookingCard extends StatelessWidget {
                     style: GoogleFonts.inter(
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: Colors.white,
+                      color: AppColors.white,
                     ),
                   ),
                 ),

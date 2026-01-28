@@ -249,30 +249,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               overflow: TextOverflow.ellipsis,
                                             ),
                                             const SizedBox(height: 4),
-                                            Row(
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                if (service.isOnSale &&
-                                                    service.originalPrice != null)
-                                                  Text(
-                                                    'INR ${service.originalPrice!.toStringAsFixed(0)}',
-                                                    style: GoogleFonts.inter(
-                                                      fontSize: 13,
-                                                      fontWeight: FontWeight.w500,
-                                                      color: Colors.white70,
-                                                      decoration: TextDecoration.lineThrough,
-                                                    ),
-                                                  ),
-                                                Text(
-                                                  'INR ${service.price.toStringAsFixed(0)}',
-                                                  style: GoogleFonts.inter(
-                                                    fontSize: 20,
-                                                    fontWeight: FontWeight.w700,
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
+                                            // Price removed
                                           ],
                                         ),
                                       ),
