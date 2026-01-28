@@ -203,14 +203,7 @@ class _ServiceListCard extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        Text(
-                          'INR ${service.price.toStringAsFixed(0)}',
-                          style: GoogleFonts.inter(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.primary,
-                          ),
-                        ),
+                        // Price removed
                       ],
                     ),
                   ],

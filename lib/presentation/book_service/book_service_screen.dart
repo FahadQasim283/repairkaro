@@ -101,14 +101,7 @@ class _BookServiceScreenState extends State<BookServiceScreen> {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        Text(
-                          'INR ${service.price}',
-                          style: GoogleFonts.inter(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.primary,
-                          ),
-                        ),
+                        // Price removed
                       ],
                     ),
                   ),

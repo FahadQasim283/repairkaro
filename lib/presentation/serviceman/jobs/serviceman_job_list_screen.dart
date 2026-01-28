@@ -44,10 +44,10 @@ class _JobCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color statusColor = booking.status == BookingStatus.pending
-        ? Colors.orange
+        ? AppColors.orange
         : booking.status == BookingStatus.approved
         ? AppColors.primary
-        : Colors.green;
+        : AppColors.primary;
 
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
@@ -135,16 +135,7 @@ class _JobCard extends StatelessWidget {
                 const SizedBox(height: 12),
                 Row(
                   children: [
-                    Expanded(
-                      child: Text(
-                        'Rs ${booking.price}',
-                        style: GoogleFonts.inter(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.secondary,
-                        ),
-                      ),
-                    ),
+                    // Price removed
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
